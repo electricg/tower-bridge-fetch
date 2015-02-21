@@ -1,0 +1,2 @@
+// remove all the jobs at the atq
+for i in `atq | awk '{print $1}'`;do atrm $i;done
